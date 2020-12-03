@@ -30,13 +30,6 @@ You can run `npm install` to install the dependencies.
 - Weatherbit: https://www.weatherbit.io/api/weather-history-daily
 - Pixabay: https://pixabay.com/api/docs/
 
-### API Keys
-I have saved my API key in `.env` file and to run the project you will also need to add a new `.env` file and store your API keys like this:
-
-              API_KEY_PIX = *************************
-              API_KEY_WEATHER = *********************
-              USERNAME_GEO = ************************
-
 Note:
 - Geonames doesn't use an API key, instead it uses a username:
 http://api.geonames.org/postalCodeSearch?postalcode=9011&maxRows=10&username=demo
