@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Travel App</title>
+    <link href="../styles/main.scss"/>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="header">Udacity Capstone Project</header>
+<main>
+    <section id="user_input_section">
+
+        <form class="" onsubmit="return Client.handleSubmit(event)">
+            <p>Hi, please enter the details of your trip below.</p>
+            <span>
+                <input id="user_input_destination" type="text" name="" placeholder="Your destination">
+                <input id="submitButton" type="submit" name="" value="submit"
+                       onclick="return Client.handleSubmit(event)"
+                       onsubmit="return Client.handleSubmit(event)">
+                </span>
+            <br>
+            <div class="user_dates">
+                <span class="trip_start_date">
+                        <label for="start_date">Departing Date: </label>
+                        <input type="date" name="date" id="start_date" placeholder="" class="trip-dates"/>
+                </span>
+                <span class="trip_end_date">
+                        <label for="end_date">Leaving Date: </label>
+                        <input type="date" name="date" id="end_date" placeholder="" class="trip-dates"/>
+                </span>
+            </div>
+        </form>
+
+        <section id="results__section">
+            <h2>Your Journey</h2>
+            <p id="user__input"></p>
+            <h3>Your Trip</h3>
+            <div id="your_trip_results">
+                <h4>Weather Forecast &#128640:</h4>
+                <p id="forecasted_weather"></p>
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer id="footer">
+    <p>&#128640 &copy Capstone Project by Z &#128640</p>
+</footer>
+<script>
+    // Check that service workers are supported
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/service-worker.js");
+        });
+    }
+</script>
+</body>
+</html>

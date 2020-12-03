@@ -1,0 +1,49 @@
+form {
+  border: 1px solid #545454;
+  border-radius: 3px;
+  padding: 30px;
+}
+
+input {
+  border: 1px purple dotted;
+  padding: 5px 20px;
+  width: 100%;
+  line-height: 16px;
+  margin: 10px 0;
+  background-color: lightcoral;
+}
+
+#title {
+  text-align:  center;
+  margin-bottom:  20px;
+}
+
+#results__section {
+  background-color:  lightcoral;
+  border:  1px black dotted;
+  border-radius: 3%;
+  padding: 10px;
+}
+
+
+#user__input, #results  {
+  color:  black;
+  margin-bottom:  40px;
+  margin-top:  30px;
+  font-size: 1em;
+}
+
+
+#submitButton {
+  font-weight: bold;
+  width:  7rem;
+  text-align:  center;
+  background-color: lightskyblue;
+  border-radius: 5%;
+}
+
+#submitButton:hover {
+  color: lightseagreen;
+  background-color: black;
+  border: black;
+}
