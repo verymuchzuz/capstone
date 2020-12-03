@@ -1,10 +1,10 @@
 // This file contains the imports of all functions and styles
 
 import { handleSubmit } from './js/handleSubmit'
-import { postRequest } from './js/postRequest'
-import { retrieveApiKey } from "./js/retrieveApiKey";
-import { checkInputURL } from "./js/checkInputURL";
-import { clientResponseUpdateUI } from "./js/clientResponseUpdateUI"
+import { forecastWeatherbit } from './js/forecastWeatherbit'
+import { imagePixabay } from "./js/imagePixabay";
+import { coordinatesGeonames } from "./js/coordinatesGeonames";
+import { updateUI } from "./js/updateUI"
 
 import "./styles/base.scss";
 import "./styles/footer.scss";
@@ -14,14 +14,14 @@ import "./styles/resets.scss";
 
 export {
     handleSubmit,
-    postRequest,
-    retrieveApiKey,
-    checkInputURL,
-    clientResponseUpdateUI
+    forecastWeatherbit,
+    imagePixabay,
+    coordinatesGeonames,
+    updateUI
 }
 
 console.log(handleSubmit);
-console.log(postRequest);
-console.log(retrieveApiKey);
-console.log(checkInputURL);
-console.log(clientResponseUpdateUI);
+console.log(forecastWeatherbit);
+console.log(imagePixabay);
+console.log(coordinatesGeonames);
+console.log(updateUI);
