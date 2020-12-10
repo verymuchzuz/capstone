@@ -7,14 +7,12 @@ const pixBaseUrl = "https://pixabay.com/api/?"
 
 const imagePixabay = async (cityInput) => {
     console.log("Fetching from Pixabay");
-
     const pixFetch = await fetch(pixBaseUrl + pixApiKey +'&q=' + cityInput + '&image_type=photo')
     try {
         const getPixabayAPI = await pixFetch.json()
         const pixData = getPixabayAPI.hits[0]
         journey = pixData.largeImageURL
         return pixData
-
         //error-handling
     } catch(error) {
         console.log("Pixabay error: ", error)
