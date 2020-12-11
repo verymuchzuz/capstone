@@ -23,7 +23,7 @@ const forecastWeatherbit =  async (inputDate) => {
     //2. figure out if the input date is under 7 days and based on that choose the correct weather forecast - i.e. current or future
     let dateBasedForecastURL = '';
     if (deltaDates > 7) {
-         dateBasedForecastURL = weatherUrlFuture + latCoords + '&lon=' + lngCoords + '&key=' + weatherApiKey;
+        dateBasedForecastURL = weatherUrlFuture + latCoords + '&lon=' + lngCoords + '&key=' + weatherApiKey;
     } else {
         dateBasedForecastURL = weatherUrlCurrent + latCoords + '&lon=' + lngCoords + '&key=' + weatherApiKey;
     }
@@ -49,7 +49,7 @@ const forecastWeatherbit =  async (inputDate) => {
                 updateUI(requestData);
                 return requestData;
                 //error-handling
-            })
+            })}
         catch
             (error)
             {
@@ -57,7 +57,6 @@ const forecastWeatherbit =  async (inputDate) => {
             }
 
         }
-    }
 }
 
 export {forecastWeatherbit}
