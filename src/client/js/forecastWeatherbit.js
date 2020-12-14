@@ -1,6 +1,7 @@
 //this function will get the forecast from Weatherbit
 // First need to figure out if we need to use current or future url from Weatherbit, then do POST request
 import {updateUI} from "./app";
+
 export let journey = {};
 
 const weatherUrlFuture = "https://api.weatherbit.io/v2.0/forecast/daily?lat=";
@@ -8,7 +9,7 @@ const weatherUrlCurrent = "https://api.weatherbit.io/v2.0/current?lat=";
 const weatherApiKey = "cbc67f0272b74d02a4cb5889d6ac91f0";
 
 
-const forecastWeatherbit =  async (inputDate) => {
+const forecastWeatherbit = async (inputDate) => {
 
     //1. define variables needed in the url function
     //dates
@@ -49,14 +50,11 @@ const forecastWeatherbit =  async (inputDate) => {
                 updateUI(requestData);
                 return requestData;
                 //error-handling
-            })}
-        catch
-            (error)
-            {
-                console.log("Post request/Weatherbit error: ", error);
-            }
-
+            })
+        } catch (error) {
+            console.log("Post request/Weatherbit error: ", error);
         }
+    }
 }
 
 export {forecastWeatherbit}
