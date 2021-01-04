@@ -1,6 +1,6 @@
 //this function will get the forecast from Weatherbit
 // First need to figure out if we need to use current or future url from Weatherbit, then do POST request
-import {updateUI} from "./app";
+import { updateUI } from "./updateUI";
 
 export let journey = {};
 
