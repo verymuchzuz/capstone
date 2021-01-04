@@ -1,4 +1,4 @@
-//this function will get the coordinates from Geonames - ZUZ happy
+//this function will get the coordinates from Geonames
 //we will add all data about our journey to this journey object
 export let journey = {};
 

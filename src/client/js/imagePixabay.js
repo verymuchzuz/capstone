@@ -1,4 +1,4 @@
-//this function will get the image from Pixabay - Zuzi happy
+//this function will get the image from Pixabay
 //we will add all data about our journey to this journey object
 export let journey = {};
 
