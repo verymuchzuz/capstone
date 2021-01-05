@@ -8,6 +8,9 @@ import {updateUI, journey} from "./updateUI";
 
 function handleSubmit(event) {
     event.preventDefault()
+
+    const destination = document.getElementById("user_input_destination").value;
+
     coordinatesGeonames(destination)
         .then(() => forecastWeatherbit(date))
         .then(() => imagePixabay(cityInput))
