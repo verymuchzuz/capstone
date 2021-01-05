@@ -10,6 +10,9 @@ function handleSubmit(event) {
     event.preventDefault()
 
     const destination = document.getElementById("user_input_destination").value;
+    const date = document.getElementById("start_date").value;
+    const cityInput = document.getElementById("end_date").value;
+
 
     coordinatesGeonames(destination)
         .then(() => forecastWeatherbit(date))
