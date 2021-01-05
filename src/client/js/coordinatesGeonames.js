@@ -3,7 +3,7 @@
 export let journey = {};
 
 const geoUrl = "http://api.geonames.org/postalCodeSearchJSON?placename=";
-const geoUsername = "&maxRows=1&username=zobalek";
+const geoUsername = "&maxRows=10&username=zobalek";
 
 const coordinatesGeonames = async (cityInput) => {
     console.log("Fetching Geonames");
