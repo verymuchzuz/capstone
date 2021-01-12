@@ -1,10 +1,11 @@
 // This file contains the imports of all functions and styles
 
-import { handleSubmit } from './js/handleSubmit'
-import { forecastWeatherbit } from './js/forecastWeatherbit'
-import { imagePixabay } from "./js/imagePixabay";
-import { coordinatesGeonames } from "./js/coordinatesGeonames";
-import { updateUI } from "./js/updateUI"
+// This file contains the imports of all functions and styles
+
+import { handleSubmit } from './js/handleSubmit';
+import { geoWeatherClient } from "./js/clientInterface";
+import { updateUI } from "./js/updateUI";
+import { postRequest } from "./js/postRequest";
 
 import "./styles/base.scss";
 import "./styles/footer.scss";
@@ -14,14 +15,7 @@ import "./styles/resets.scss";
 
 export {
     handleSubmit,
-    forecastWeatherbit,
-    imagePixabay,
-    coordinatesGeonames,
-    updateUI
+    geoWeatherClient,
+    updateUI,
+    postRequest
 }
-
-console.log(handleSubmit);
-console.log(forecastWeatherbit);
-console.log(imagePixabay);
-console.log(coordinatesGeonames);
-console.log(updateUI);
