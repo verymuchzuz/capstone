@@ -1,5 +1,5 @@
-import { coordinatesGeonames} from '../src/client/js/coordinatesGeonames.js'
+import { geoWeatherClient} from '../src/client/js/clientInterface.js'
 
 test('coordinatesGeonames is a function', () => {
-    expect(typeof coordinatesGeonames).toBe('function');
+    expect(typeof geoWeatherClient).toBe('function');
 });
