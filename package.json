@@ -2,12 +2,13 @@
   "name": "travel-app",
   "version": "1.0.0",
   "description": "The project includes a simple form where you enter the location you are traveling to and the date you are leaving.",
-  "main": "src/server/server.js",
+  "main": "src/server/index.js",
   "scripts": {
     "test": "jest",
-    "start": "node src/server/index.js",
+    "start": "node src/server/server.js",
     "build-dev": "webpack-dev-server --config webpack.dev.js --open",
-    "build-prod": "webpack --config webpack.prod.js --open"
+    "build-prod": "webpack --config webpack.prod.js --open",
+    "run-me": "webpack --config webpack.prod.js && node src/server/server.js"
   },
   "keywords": [],
   "author": "Zoe B",
