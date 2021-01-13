@@ -15,8 +15,8 @@ You can run `npm install` to install the dependencies.
 
 ### Start the app
 
-1. run: node server.js
-2. app is running on http://localhost:3333/
+1. run: npm run-me
+2. app is running on http://localhost:3143/
 
 ### APIs used:
 
